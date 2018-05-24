@@ -22,6 +22,13 @@ html, body {
   align-items: center;
 }
 
+.header {
+  padding:20px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
 .comic {
   display: flex;
   flex-direction: column;
@@ -36,7 +43,7 @@ html, body {
 }
 
 .caption {
-  margin: 0px 20px 20px 20px;
+  /* margin: 0px 20px 20px 20px; */
   padding: 5px;
   display: flex;
   flex-flow: row wrap;
@@ -46,17 +53,11 @@ html, body {
 .title {
   justify-content: flex-start;
   width: 50%;
-  height: 100;
 }
 
-.issue, .publish-date, .details{
-  /* justify-content: flex-end; */
+.issue, .publish-date{
   width: 50%;
   text-align: right;
-}
-
-.publish-date {
-  /* align-self: flex-end; */
 }
 
 /* Fonts, colors, borders */
@@ -68,20 +69,25 @@ html {
 
 .header {
   font-size: 3em;
+  background-color: #757575;
 }
 
 .comic {
-  background-color: #757575;
   border-radius: 5px;
+  border: 5px solid #757575;
 }
 
 .caption {
-  background-color: white;
-  border-radius: 5px;
+  background-color: #757575;
+  color: white;
 }
 
-.issue, .publish-date, .details {
-  color: #757575;
+.title {
+  font-size: 1.25em;
+}
+
+.issue, .publish-date {
+  color: white;
 }
 
 /* Link defaults */
